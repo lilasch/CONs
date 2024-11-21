@@ -31,7 +31,7 @@ def starfind(image_data):
 
 
 def get_contour_levels(image_data, num_levels):
-    percentiles = np.linspace(89, 99, num_levels)
+    percentiles = np.linspace(0, 30, num_levels)
     contour_levels = np.percentile(image_data, percentiles)
     return contour_levels
 
